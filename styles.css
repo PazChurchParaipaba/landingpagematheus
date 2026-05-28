@@ -467,3 +467,31 @@ body, html {
         padding: 8px 0;
     }
 }
+
+/* Unmute Overlay */
+.video-wrapper { position: relative; }
+.mute-toggle-overlay {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border: 2px solid rgba(255,255,255,0.4);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.mute-toggle-overlay:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
